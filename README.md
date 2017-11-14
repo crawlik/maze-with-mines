@@ -26,8 +26,10 @@ Commands:
   emazeme help [COMMAND]    # Describe available commands or one specific command
   emazeme solve FILE LIVES  # Solve mazes
 ```
+
 # Example
 
+```bash
 $ ruby emazeme solve mazes/maze.0
 ------------------------------
 From 7:[1, 2] to 0:[0, 0]
@@ -35,5 +37,5 @@ Shortest path: [7, 4, 1, 0]
 Shortest path directions: ["up", "up", "left"]
 Mine hits: 1. Mine positions: [[1, 1]]
 
-ruby ruby emazeme solve mazes/mazes.txt
+$ ruby emazeme solve mazes/mazes.txt
 ```
