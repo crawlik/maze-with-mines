@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+require 'thor'
+require_relative 'maze'
+
+class EmazeMeCLI < Thor
+
+  desc "solve FILE LIVES", "Solve mazes"
+  def solve(file, lives=3)
+    File.readlines(file).each do |line|
+      Maze.new(line).withLives(lives).solve()
+    end
+  end
+
+end
+
+EmazeMeCLI.start(ARGV)

@@ -1,0 +1,4 @@
+find ./ -name '*.rb' \
+-o -name emazeme -o -name README.md -o -name docs -o -name mazes \
+-o -name tar.me -o -name spec -o -name Gemfile | \
+tar -zcf spark-cognition-mines-`date +%s`.tar.gz -T -
